@@ -22,7 +22,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  let amPm = hour >= 12 ? "PM" : "AM";
+  let amPm = hour >= 12 ? "AM" : "PM";
 
   return `${day} ${hour}:${minutes} ${amPm}`;
 }
