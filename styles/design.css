@@ -2,6 +2,27 @@ body {
   font-family: "Oxygen", sans-serif;
 }
 
+h1 {
+  font-size: 120px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
 ul {
   list-style: none;
+}
+
+.page {
+  display: block;
+  margin: 175px auto 200px;
+  max-width: 950px;
+  border: solid 2px black;
+  padding: 2em;
+}
+
+.units {
+  position: relative;
+  left: 50px;
 }
