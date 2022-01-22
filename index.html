@@ -15,13 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -33,14 +27,46 @@
   <body>
     <div class="page">
       <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-1 temperature">
+            <h1>15°</h1>
+          </div>
+          <div class="col-6 col-sm-1 units">C° | F°</div>
+          <div class="col-md-4 offset-md-5">
+            <form>
+              <input
+                type="search"
+                id="search-input"
+                autocomplete="off"
+                autofocus="on"
+              />
+            </form>
+          </div>
+        </div>
         <ul>
           <li>
-            <h1>15°</h1>
+            <h3>in Boca Raton</h3>
           </li>
-          <li>
-            <h2>in Boca Raton</h2>
-          </li>
+          <li><h6>Friday 8:37</h6></li>
         </ul>
+        <div class="row">
+          <div class="col-1">High</div>
+          <div class="col-1">Low</div>
+        </div>
+        <div class="row">
+          <div class="col-1">20°</div>
+          <div class="col-1">10°</div>
+        </div>
+        <br />
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto">
+            <ul>
+              <li class="Wind">Wind: 5 mph</li>
+              <li class="conditions">Conditions: sunny</li>
+              <li class="humidity">Humidity: 70%</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <script src="src/index.js"></script>
