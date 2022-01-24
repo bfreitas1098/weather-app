@@ -21,9 +21,18 @@ ul {
   list-style: none;
 }
 
+form {
+  margin-left: 100px;
+}
+
 button {
   border: none;
   background-color: transparent;
+  font-size: 22px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .page {
@@ -38,4 +47,14 @@ button {
   position: relative;
   left: 60px;
   top: 48px;
+}
+
+#search-button {
+  margin-left: 10px;
+  margin-top: -4px;
+}
+
+#current-button {
+  margin-left: 8px;
+  margin-top: -4px;
 }
