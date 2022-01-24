@@ -25,6 +25,7 @@ button {
   border: none;
   background-color: transparent;
   font-size: 22px;
+  margin-top: -4px;
 }
 
 button:hover {
@@ -54,6 +55,20 @@ button:hover {
   margin-top: -3px;
 }
 
+.max-min-label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.high-temp {
+  margin-left: 25px;
+}
+
+.low-temp {
+  margin-left: 45px;
+}
+
 #search-input {
   border: solid 3px black;
   margin-left: 100px;
@@ -61,10 +76,16 @@ button:hover {
 
 #search-button {
   margin-left: 10px;
-  margin-top: -4px;
 }
 
 #current-button {
   margin-left: 8px;
-  margin-top: -4px;
+}
+
+#temp-max {
+  margin-left: 35px;
+}
+
+#temp-min {
+  margin-left: 45px;
 }
