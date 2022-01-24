@@ -21,10 +21,6 @@ ul {
   list-style: none;
 }
 
-form {
-  margin-left: 100px;
-}
-
 button {
   border: none;
   background-color: transparent;
@@ -47,6 +43,20 @@ button:hover {
   position: relative;
   left: 60px;
   top: 48px;
+  font-size: 18px;
+}
+
+.celcius {
+  margin-bottom: 7px;
+}
+
+.fahrenheit {
+  margin-top: -3px;
+}
+
+#search-input {
+  border: solid 3px black;
+  margin-left: 100px;
 }
 
 #search-button {
