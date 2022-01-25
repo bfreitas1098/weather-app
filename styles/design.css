@@ -46,6 +46,10 @@ p {
   border: solid 2px black;
   padding: 2em;
   background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 60px 55px,
+    rgba(0, 0, 0, 0.12) 0px -20px 35px, rgba(0, 0, 0, 0.12) 0px 10px 10px,
+    rgba(0, 0, 0, 0.17) 0px 20px 20px, rgba(0, 0, 0, 0.09) 0px -10px 10px;
+  border-radius: 7px;
 }
 
 .units {
@@ -87,6 +91,8 @@ p {
 #search-input {
   border: solid 3px black;
   margin-left: 100px;
+  box-shadow: -2px 3px 4px 2px rgba(0, 0, 0, 0.17);
+  border-radius: 2px;
 }
 
 #search-button {
