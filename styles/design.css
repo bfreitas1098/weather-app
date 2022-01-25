@@ -33,6 +33,11 @@ button:hover {
   cursor: pointer;
 }
 
+p {
+  margin-top: -190px;
+  margin-left: 245px;
+}
+
 .page {
   display: block;
   margin: 175px auto 200px;
