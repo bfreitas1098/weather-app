@@ -1,5 +1,6 @@
 body {
   font-family: "Oxygen", sans-serif;
+  background-size: 1450px;
 }
 
 h1 {
@@ -44,6 +45,7 @@ p {
   max-width: 950px;
   border: solid 2px black;
   padding: 2em;
+  background-color: transparent;
 }
 
 .units {
