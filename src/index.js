@@ -20,15 +20,18 @@ function displayCurrentTemperature(response) {
     response.data.main.temp
   )}°`;
   document.querySelector("h3").innerHTML = `in ${response.data.name}`;
-  document.querySelector(
-    "#conditions"
-  ).innerHTML = `Conditions: ${response.data.weather[0].description}`;
-  document.querySelector(
-    "#humidity"
-  ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
-  document.querySelector("#wind-conditions").innerHTML = `Wind: ${Math.round(
+  document.querySelector("#conditions").innerHTML =
+    response.data.weather[0].description;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind-conditions").innerHTML = Math.round(
     response.data.wind.speed
-  )} mph`;
+  );
+  document.querySelector("#temp-max").innerHTML = `${Math.round(
+    response.data.main.temp_max
+  )}°`;
+  document.querySelector("#temp-min").innerHTML = `${Math.round(
+    response.data.main.temp_min
+  )}°`;
   document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
   );
