@@ -93,6 +93,10 @@ p {
   font-size: 25px;
 }
 
+#conditions {
+  text-transform: capitalize;
+}
+
 #search-input {
   border: solid 3px black;
   margin-left: 100px;
