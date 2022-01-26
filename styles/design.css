@@ -59,8 +59,13 @@ p {
   font-size: 18px;
 }
 
+.units:hover {
+  cursor: pointer;
+}
+
 .celcius {
   margin-bottom: 7px;
+  margin-left: -1px;
 }
 
 .fahrenheit {
