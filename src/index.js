@@ -58,4 +58,7 @@ function conductSearch(event) {
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", conductSearch);
 
+let searchButton = document.querySelector("#search-button");
+searchButton.addEventListener("click", conductSearch);
+
 searchCity("Miami");
