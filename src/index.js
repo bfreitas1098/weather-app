@@ -43,6 +43,19 @@ function displayCurrentTemperature(response) {
   );
 }
 
-let apiKey = "ed1ad0d4f5bbf7823ad1cdd74e7abf8c";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}&units=imperial`;
-axios.get(apiUrl).then(displayCurrentTemperature);
+function searchCity(city) {
+  let apiKey = "ed1ad0d4f5bbf7823ad1cdd74e7abf8c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayCurrentTemperature);
+}
+
+function conductSearch(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#search-input");
+  searchCity(cityInput.value);
+}
+
+let searchForm = document.querySelector("form");
+searchForm.addEventListener("submit", conductSearch);
+
+searchCity("Miami");
