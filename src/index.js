@@ -35,16 +35,19 @@ function changeBackground() {
     document.body.className = "sunset";
     document.getElementById("body").style.color = "white";
     document.getElementsByClassName("active").style.color = "#fffc3a";
+    document.getElementsByClassName("github-link").style.color = "#fffc3a";
   } else if (hours === 20 || 21 || 22 || 23 || 0 || 1 || 2 || 3 || 4) {
     document.body.className = "night";
     document.getElementById("body").style.color = "white";
     document.getElementsByClassName("active").style.color = "#fffc3a";
+    document.getElementsByClassName("github-link").style.color = "#fffc3a";
   } else if (hours === 5 || 6 || 7) {
     document.body.className = "dawn";
   } else {
     document.body.className = "sunrise";
     document.getElementById("body").style.color = "white";
     document.getElementsByClassName("active").style.color = "#fffc3a";
+    document.getElementsByClassName("github-link").style.color = "#fffc3a";
   }
 }
 
