@@ -134,8 +134,16 @@ p {
 .weather-conditions {
   text-align: right;
   margin-top: -40px;
-  margin-left: 10px;
-  font-size: 25px;
+  margin-left: 50px;
+  font-size: 23px;
+}
+
+.conditions {
+  margin-left: 138px;
+}
+
+.wind-conditions {
+  margin-left: -15px;
 }
 
 .github-link {
