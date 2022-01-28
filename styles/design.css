@@ -136,6 +136,7 @@ p {
   margin-top: -40px;
   margin-left: 50px;
   font-size: 23px;
+  margin-bottom: 50px;
 }
 
 .conditions {
@@ -194,6 +195,10 @@ p {
 
 #temp-min {
   margin-left: 54px;
+}
+
+#forecast {
+  margin-left: 150px;
 }
 
 #icon {

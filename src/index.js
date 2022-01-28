@@ -131,3 +131,34 @@ function displayFahrenheitTemperatures(event) {
 
 let fahrenheitButton = document.querySelector("#fahrenheit-link");
 fahrenheitButton.addEventListener("click", displayFahrenheitTemperatures);
+
+// Functions to display the forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+        <div class="forecast-day">${day}</div>
+        <img
+          id="icon"
+          src="https://openweathermap.org/img/wn/04d@2x.png"
+          alt="clouds"
+          width="50px"
+        />
+        <br />
+        <div class="forecast-temperatures">
+          <span class="forecast-weather-max">75° </span>
+          <span class="forecast-weather-min"> 60°</span>
+        </div>
+      </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
