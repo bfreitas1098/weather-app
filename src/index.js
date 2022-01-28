@@ -1,7 +1,7 @@
 // Date and time functions
 
-function formatDate(timestamp) {
-  let date = new Date(timestamp);
+function formatDate() {
+  let date = new Date();
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -23,6 +23,9 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+let date = document.querySelector("#date");
+date.innerHTML = formatDate();
+
 function changeBackground() {
   let date = new Date();
   let hours = date.getHours();
@@ -30,12 +33,18 @@ function changeBackground() {
     document.body.className = "afternoon";
   } else if (hours === 17 || 18 || 19) {
     document.body.className = "sunset";
+    document.getElementById("body").style.color = "white";
+    document.getElementsByClassName("active").style.color = "#fffc3a";
   } else if (hours === 20 || 21 || 22 || 23 || 0 || 1 || 2 || 3 || 4) {
     document.body.className = "night";
+    document.getElementById("body").style.color = "white";
+    document.getElementsByClassName("active").style.color = "#fffc3a";
   } else if (hours === 5 || 6 || 7) {
     document.body.className = "dawn";
   } else {
     document.body.className = "sunrise";
+    document.getElementById("body").style.color = "white";
+    document.getElementsByClassName("active").style.color = "#fffc3a";
   }
 }
 
@@ -61,9 +70,6 @@ function displayCurrentTemperature(response) {
   document.querySelector("#temp-min").innerHTML = `${Math.round(
     fahrenheitMin
   )}°`;
-  document.querySelector("#date").innerHTML = formatDate(
-    response.data.dt * 1000
-  );
 }
 
 function searchCity(city) {
