@@ -27,7 +27,7 @@ function formatDate(timestamp) {
 
 function displayCurrentTemperature(response) {
   fahrenheitTemp = response.data.main.temp;
-  document.querySelector("h1").innerHTML = `${Math.round(fahrenheitTemp)}°`;
+  document.querySelector("h1").innerHTML = Math.round(fahrenheitTemp);
   document.querySelector("h3").innerHTML = `in ${response.data.name}`;
   document.querySelector("#conditions").innerHTML =
     response.data.weather[0].description;
@@ -78,7 +78,7 @@ function displayCelsiusTemperatures(event) {
   event.preventDefault();
   fahrenheitButton.classList.remove("active");
   celsiusButton.classList.add("active");
-  let celsiusTemp = `${Math.round(((fahrenheitTemp - 32) * 5) / 9)}°`;
+  let celsiusTemp = Math.round(((fahrenheitTemp - 32) * 5) / 9);
   document.querySelector("h1").innerHTML = celsiusTemp;
   let celsiusMax = `${Math.round(((fahrenheitMax - 32) * 5) / 9)}°`;
   document.querySelector("#temp-max").innerHTML = celsiusMax;
@@ -93,7 +93,7 @@ function displayFahrenheitTemperatures(event) {
   event.preventDefault();
   celsiusButton.classList.remove("active");
   fahrenheitButton.classList.add("active");
-  document.querySelector("h1").innerHTML = `${Math.round(fahrenheitTemp)}°`;
+  document.querySelector("h1").innerHTML = Math.round(fahrenheitTemp);
   document.querySelector("#temp-max").innerHTML = `${Math.round(
     fahrenheitMax
   )}°`;
