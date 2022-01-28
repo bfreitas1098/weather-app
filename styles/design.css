@@ -34,6 +34,17 @@ button:hover {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0s;
+}
+
+a:hover {
+  cursor: pointer;
+  color: black;
+}
+
 p {
   margin-top: -190px;
   margin-left: 245px;
@@ -59,17 +70,17 @@ p {
   font-size: 18px;
 }
 
-.units:hover {
-  cursor: pointer;
-}
-
-.celcius {
+.celsius {
   margin-bottom: 7px;
   margin-left: -1px;
 }
 
 .fahrenheit {
   margin-top: -3px;
+}
+
+.active {
+  color: white;
 }
 
 .max-min-label {
@@ -91,6 +102,14 @@ p {
   margin-top: -40px;
   margin-left: 10px;
   font-size: 25px;
+}
+
+.github-link {
+  color: blue;
+}
+
+.github-link:hover {
+  color: blue;
 }
 
 #conditions {
@@ -117,5 +136,5 @@ p {
 }
 
 #temp-min {
-  margin-left: 47px;
+  margin-left: 46px;
 }
