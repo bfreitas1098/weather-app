@@ -1,6 +1,10 @@
 body {
   font-family: "Oxygen", sans-serif;
   background-size: 1450px;
+  background-image: url("../media/dawn.jpg");
+  background-size: 1500px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1 {
