@@ -146,6 +146,21 @@ p {
   margin-left: 0;
 }
 
+.forecast-day {
+  margin-left: 6px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.forecast-temperatures {
+  margin-left: -4px;
+}
+
+.forecast-weather-max {
+  opacity: 80;
+  font-weight: bold;
+}
+
 .github-link {
   color: blue;
 }
@@ -179,4 +194,8 @@ p {
 
 #temp-min {
   margin-left: 46px;
+}
+
+#icon {
+  margin-left: -3px;
 }
