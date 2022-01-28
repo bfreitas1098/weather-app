@@ -124,11 +124,11 @@ p {
 }
 
 .high-temp {
-  margin-left: 25px;
+  margin-left: 13px;
 }
 
 .low-temp {
-  margin-left: 45px;
+  margin-left: 55px;
 }
 
 .weather-conditions {
@@ -189,11 +189,11 @@ p {
 }
 
 #temp-max {
-  margin-left: 33px;
+  margin-left: 23px;
 }
 
 #temp-min {
-  margin-left: 46px;
+  margin-left: 54px;
 }
 
 #icon {
