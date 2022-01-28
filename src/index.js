@@ -73,6 +73,8 @@ function displayCurrentTemperature(response) {
   document.querySelector("#temp-min").innerHTML = `${Math.round(
     fahrenheitMin
   )}°`;
+
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -134,7 +136,8 @@ fahrenheitButton.addEventListener("click", displayFahrenheitTemperatures);
 
 // Functions to display the forecast
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
@@ -161,4 +164,8 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
-displayForecast();
+function getForecast(coordinates) {
+  let apiKey = "ed1ad0d4f5bbf7823ad1cdd74e7abf8c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
+}
