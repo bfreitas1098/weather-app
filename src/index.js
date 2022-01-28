@@ -23,6 +23,24 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function changeBackground() {
+  let date = new Date();
+  let hours = date.getHours();
+  if (hours === 11 || 12 || 13 || 14 || 15 || 16) {
+    document.body.className = "afternoon";
+  } else if (hours === 17 || 18 || 19) {
+    document.body.className = "sunset";
+  } else if (hours === 20 || 21 || 22 || 23 || 0 || 1 || 2 || 3 || 4) {
+    document.body.className = "night";
+  } else if (hours === 5 || 6 || 7) {
+    document.body.className = "dawn";
+  } else {
+    document.body.className = "sunrise";
+  }
+}
+
+changeBackground();
+
 // Functions to change current temperatures and weather conditions of searched cities
 
 function displayCurrentTemperature(response) {
