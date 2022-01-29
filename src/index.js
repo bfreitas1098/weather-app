@@ -27,30 +27,33 @@ let date = document.querySelector("#date");
 date.innerHTML = formatDate();
 
 function changeBackground() {
-  let date = new Date();
-  let hours = date.getHours();
-  if (hours === 11 || 12 || 13 || 14 || 15 || 16) {
-    document.body.className = "afternoon";
-  } else if (hours === 17 || 18 || 19) {
-    document.body.className = "sunset";
-    document.getElementById("body").style.color = "white";
-    document.getElementsByClassName("active").style.color = "#fffc3a";
-    document.getElementsByClassName("github-link").style.color = "#fffc3a";
-  } else if (hours === 20 || 21 || 22 || 23 || 0 || 1 || 2 || 3 || 4) {
-    document.body.className = "night";
-    document.getElementById("body").style.color = "white";
-    document.getElementsByClassName("active").style.color = "#fffc3a";
-    document.getElementsByClassName("github-link").style.color = "#fffc3a";
-  } else if (hours === 5 || 6 || 7) {
-    document.body.className = "dawn";
-  } else {
-    document.body.className = "sunrise";
-    document.getElementById("body").style.color = "white";
-    document.getElementsByClassName("active").style.color = "#fffc3a";
-    document.getElementsByClassName("github-link").style.color = "#fffc3a";
+  let currentHour = new Date().getHours();
+  if (document.body) {
+    if (currentHour === 5 || currentHour === 6 || currentHour === 7) {
+      document.body.background =
+        "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/924/original/dawn.jpg?1643494001";
+    } else if (currentHour === 8 || currentHour === 9 || currentHour === 10) {
+      document.body.background =
+        "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/926/original/sunrise.jpg?1643494259";
+    } else if (
+      currentHour === 11 ||
+      currentHour === 12 ||
+      currentHour === 13 ||
+      currentHour === 14 ||
+      currentHour === 15 ||
+      currentHour === 16
+    ) {
+      document.body.background =
+        "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/927/original/afternoon.jpg?1643494422";
+    } else if (currentHour === 17 || currentHour === 18 || currentHour === 19) {
+      document.body.background =
+        "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/928/original/sunset.jpg?1643494483";
+    } else {
+      document.body.background =
+        "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/929/original/night.jpg?1643494495";
+    }
   }
 }
-
 changeBackground();
 
 // Functions to change current temperatures and weather conditions of searched cities
