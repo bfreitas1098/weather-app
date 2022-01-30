@@ -36,6 +36,7 @@ function changeBackground() {
       document.body.background =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/926/original/sunrise.jpg?1643494259";
       body.style.color = "#fcfcfc";
+      input.style.borderColor = "#fcfcfc";
     } else if (
       currentHour === 11 ||
       currentHour === 12 ||
@@ -53,11 +54,13 @@ function changeBackground() {
       document.body.background =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/929/original/night.jpg?1643494495";
       body.style.color = "#fffe9a";
+      input.style.borderColor = "#fffe9a";
     }
   }
 }
 
 let body = document.querySelector("body");
+let input = document.querySelector("search-input");
 
 changeBackground();
 
@@ -173,8 +176,8 @@ function displayForecast(response) {
         />
         <br />
         <div class="forecast-temperatures">
-          <span class="forecast-weather-max">${forecastMax}°</span>
-          <span class="forecast-weather-min"> ${forecastMin}°</span>
+          <span class="forecast-weather-max">${forecastMax}°    </span>
+          <span class="forecast-weather-min">   ${forecastMin}°</span>
         </div>
       </div>
   `;

@@ -52,7 +52,7 @@ p {
 
 .page {
   display: block;
-  margin: 120px auto 200px;
+  margin: 100px auto 200px;
   max-width: 950px;
   border: 3px white;
   padding: 2em;
@@ -106,7 +106,7 @@ p {
   margin-top: -40px;
   margin-left: 50px;
   font-size: 23px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .conditions {
@@ -118,13 +118,9 @@ p {
 }
 
 .forecast-day {
-  margin-left: 6px;
+  margin-left: 3px;
   font-size: 20px;
   font-weight: 700;
-}
-
-.forecast-temperatures {
-  margin-left: -4px;
 }
 
 .forecast-weather-max {
@@ -168,7 +164,8 @@ p {
 }
 
 #forecast {
-  margin-left: 150px;
+  margin-left: 70px;
+  margin-right: -200px;
 }
 
 #icon {
