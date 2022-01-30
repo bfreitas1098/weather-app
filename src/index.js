@@ -35,6 +35,7 @@ function changeBackground() {
     } else if (currentHour === 8 || currentHour === 9 || currentHour === 10) {
       document.body.background =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/926/original/sunrise.jpg?1643494259";
+      body.style.color = "#fcfcfc";
     } else if (
       currentHour === 11 ||
       currentHour === 12 ||
@@ -51,9 +52,17 @@ function changeBackground() {
     } else {
       document.body.background =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/929/original/night.jpg?1643494495";
+      body.style.color = "#fffe9a";
     }
   }
 }
+
+let body = document.querySelector("body");
+let active = document.querySelector(".active");
+
+let celsiusUnit = document.querySelector(".celsius");
+let fahrenheitUnit = document.querySelector(".fahrenheit");
+
 changeBackground();
 
 // Functions to change current temperatures and weather conditions of searched cities
@@ -108,6 +117,11 @@ let fahrenheitMin = null;
 
 function displayCelsiusTemperatures(event) {
   event.preventDefault();
+  let date = new Date().getHours();
+  if (date >= 20 || date < 5) {
+    fahrenheitButton.classList.remove("color");
+    celsiusButton.classList.remove("color");
+  }
   fahrenheitButton.classList.remove("active");
   celsiusButton.classList.add("active");
   let celsiusTemp = Math.round(((fahrenheitTemp - 32) * 5) / 9);
@@ -123,6 +137,11 @@ celsiusButton.addEventListener("click", displayCelsiusTemperatures);
 
 function displayFahrenheitTemperatures(event) {
   event.preventDefault();
+  let date = new Date().getHours();
+  if (date >= 20 || date < 5) {
+    fahrenheitButton.classList.remove("color");
+    celsiusButton.classList.remove("color");
+  }
   celsiusButton.classList.remove("active");
   fahrenheitButton.classList.add("active");
   document.querySelector("h1").innerHTML = Math.round(fahrenheitTemp);

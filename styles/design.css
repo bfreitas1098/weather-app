@@ -52,15 +52,15 @@ p {
 
 .page {
   display: block;
-  margin: 175px auto 200px;
+  margin: 120px auto 200px;
   max-width: 950px;
-  border: solid 2px black;
+  border: 3px white;
   padding: 2em;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 60px 55px,
     rgba(0, 0, 0, 0.12) 0px -20px 35px, rgba(0, 0, 0, 0.12) 0px 10px 10px,
     rgba(0, 0, 0, 0.17) 0px 20px 20px, rgba(0, 0, 0, 0.09) 0px -10px 10px;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 .units {
@@ -68,6 +68,10 @@ p {
   left: 60px;
   top: 48px;
   font-size: 18px;
+}
+
+.color {
+  color: #fffe9a;
 }
 
 .celsius {
