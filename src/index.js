@@ -58,10 +58,6 @@ function changeBackground() {
 }
 
 let body = document.querySelector("body");
-let active = document.querySelector(".active");
-
-let celsiusUnit = document.querySelector(".celsius");
-let fahrenheitUnit = document.querySelector(".fahrenheit");
 
 changeBackground();
 
@@ -117,11 +113,6 @@ let fahrenheitMin = null;
 
 function displayCelsiusTemperatures(event) {
   event.preventDefault();
-  let date = new Date().getHours();
-  if (date >= 20 || date < 5) {
-    fahrenheitButton.classList.remove("color");
-    celsiusButton.classList.remove("color");
-  }
   fahrenheitButton.classList.remove("active");
   celsiusButton.classList.add("active");
   let celsiusTemp = Math.round(((fahrenheitTemp - 32) * 5) / 9);
@@ -137,11 +128,6 @@ celsiusButton.addEventListener("click", displayCelsiusTemperatures);
 
 function displayFahrenheitTemperatures(event) {
   event.preventDefault();
-  let date = new Date().getHours();
-  if (date >= 20 || date < 5) {
-    fahrenheitButton.classList.remove("color");
-    celsiusButton.classList.remove("color");
-  }
   celsiusButton.classList.remove("active");
   fahrenheitButton.classList.add("active");
   document.querySelector("h1").innerHTML = Math.round(fahrenheitTemp);
