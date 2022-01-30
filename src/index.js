@@ -2,7 +2,7 @@
 
 function formatDate() {
   let date = new Date();
-  let hours = date.getHours();
+  let hours = date.getHours() % 12 || 12;
   if (hours < 10) {
     hours = `0${hours}`;
   }
@@ -28,6 +28,11 @@ date.innerHTML = formatDate();
 
 function changeBackground() {
   let currentHour = new Date().getHours();
+  if (currentHour >= 12) {
+    document.querySelector("#date").innerHTML = `${date.innerHTML} PM`;
+  } else {
+    document.querySelector("#date").innerHTML = `${date.innerHTML} AM`;
+  }
   if (document.body) {
     if (currentHour === 5 || currentHour === 6 || currentHour === 7) {
       document.body.background =
