@@ -66,7 +66,7 @@ changeBackground();
 
 // Functions to change current temperatures and weather conditions of searched cities
 
-function displayCurrentTemperature(response) {
+function displayTemperature(response) {
   fahrenheitTemp = response.data.main.temp;
   document.querySelector("h1").innerHTML = Math.round(fahrenheitTemp);
   document.querySelector("h3").innerHTML = `in ${response.data.name}`;
@@ -91,7 +91,7 @@ function displayCurrentTemperature(response) {
 function searchCity(city) {
   let apiKey = "ed1ad0d4f5bbf7823ad1cdd74e7abf8c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(displayCurrentTemperature);
+  axios.get(apiUrl).then(displayTemperature);
 }
 
 function conductSearch(event) {
@@ -192,3 +192,19 @@ function getForecast(coordinates) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
+
+// functions to get current location temperature
+
+function getCurrentLocation(position) {
+  let apiKey = "ed1ad0d4f5bbf7823ad1cdd74e7abf8c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function findCurrentTemperature(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(getCurrentLocation);
+}
+
+let currentLocation = document.querySelector("#current-button");
+currentLocation.addEventListener("click", findCurrentTemperature);
