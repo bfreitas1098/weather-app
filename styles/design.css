@@ -66,12 +66,12 @@ p {
 .units {
   position: relative;
   left: 60px;
-  top: 48px;
+  top: 38px;
   font-size: 18px;
 }
 
 .color {
-  color: #fffe9a;
+  color: #eb6e4c;
 }
 
 .celsius {
