@@ -41,7 +41,6 @@ function changeBackground() {
       document.body.background =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/926/original/sunrise.jpg?1643494259";
       body.style.color = "#fcfcfc";
-      input.style.borderColor = "#fcfcfc";
     } else if (
       currentHour === 11 ||
       currentHour === 12 ||
@@ -52,20 +51,18 @@ function changeBackground() {
     ) {
       document.body.background =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/927/original/afternoon.jpg?1643494422";
-    } else if (currentHour === 17 || currentHour === 18 || currentHour === 19) {
+    } else if (currentHour === 17 || currentHour === 18) {
       document.body.background =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/928/original/sunset.jpg?1643494483";
     } else {
       document.body.background =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/929/original/night.jpg?1643494495";
       body.style.color = "#fffe9a";
-      input.style.borderColor = "#fffe9a";
     }
   }
 }
 
 let body = document.querySelector("body");
-let input = document.querySelector("search-input");
 
 changeBackground();
 
