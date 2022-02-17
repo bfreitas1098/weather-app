@@ -171,3 +171,106 @@ p {
 #icon {
   margin-left: -3px;
 }
+
+@media (min-width: 0px) and (max-width: 399px) {
+  .page {
+    border: 0px transparent;
+    box-shadow: none;
+    max-width: 150px;
+    margin: 35px 0px 39px 66px;
+  }
+
+  .weather-conditions {
+    margin: 75px 0 0 -176px;
+    font-size: 20px;
+  }
+
+  .humidity {
+    margin: -60px 0 0 212px;
+  }
+
+  .wind-conditions {
+    margin: -30px 0 0 199px;
+  }
+
+  .conditions {
+    margin-left: 30px;
+  }
+
+  #conditions {
+    margin-left: 4px;
+  }
+
+  #search-input {
+    margin-left: -115px;
+    margin-top: 30px;
+  }
+
+  #search-button {
+    position: relative;
+    top: -29px;
+    left: 85px;
+  }
+
+  #current-button {
+    position: relative;
+    top: -61px;
+    left: 140px;
+  }
+
+  #date {
+    margin: 25px 0 0 -80px;
+    font-size: 25px;
+  }
+
+  #temp-max {
+    margin-left: -10px;
+    font-size: 22px;
+  }
+
+  #temp-min {
+    margin: -33px 0 0 124px;
+    font-size: 22px;
+  }
+
+  #forecast {
+    margin-left: -130px;
+    margin-top: 85px;
+  }
+
+  .temp-number-row {
+    margin: 10px 0 0 -75px;
+  }
+
+  .temp-label-row {
+    margin: 50px 0 0 -75px;
+  }
+
+  .high-temp {
+    margin-left: -20px;
+    font-size: 22px;
+  }
+
+  .low-temp {
+    margin-left: 109px;
+    font-size: 22px;
+  }
+
+  h1 {
+    margin-top: -75px;
+    margin-left: -10px;
+  }
+
+  .units {
+    margin: -55px 0 0 -30px;
+  }
+
+  .bottom-line {
+    margin: -61px 0 0 55px;
+  }
+
+  h3 {
+    margin-left: -90px;
+    margin-top: -40px;
+  }
+}
