@@ -179,13 +179,11 @@ p {
   }
 
   h1 {
-    margin-top: -75px;
-    margin-left: -85px;
+    margin: -75px 0 0 -85px;
   }
 
   h3 {
-    margin-left: -116px;
-    margin-top: -40px;
+    margin: -40px 0 0 -116px;
   }
 
   .container-fluid {
@@ -227,9 +225,8 @@ p {
   }
 
   .high-temp {
-    margin-left: -20px;
+    margin: 0 0 -35px -20px;
     font-size: 22px;
-    margin-bottom: -35px;
   }
 
   .low-temp {
@@ -250,8 +247,7 @@ p {
   }
 
   #search-input {
-    margin-left: -115px;
-    margin-top: 30px;
+    margin: 30px 0 0 -115px;
   }
 
   #search-button {
@@ -282,26 +278,17 @@ p {
   }
 
   #forecast {
-    margin-left: -137px;
-    margin-top: 85px;
-    margin-right: -199px;
+    margin: 85px -199px 0 -137px;
   }
 }
 
 @media (min-width: 400px) and (max-width: 499px) {
-  body {
-    display: block;
-    margin: 0 auto;
-  }
-
   h1 {
-    margin-top: -75px;
-    margin-left: -85px;
+    margin: -75px 0 0 -85px;
   }
 
   h3 {
-    margin-left: -116px;
-    margin-top: -40px;
+    margin: -40px 0 0 -116px;
   }
 
   .container-fluid {
@@ -343,9 +330,8 @@ p {
   }
 
   .high-temp {
-    margin-left: -45px;
+    margin: 0 0 -35px -45px;
     font-size: 22px;
-    margin-bottom: -35px;
   }
 
   .low-temp {
@@ -366,8 +352,7 @@ p {
   }
 
   #search-input {
-    margin-left: -115px;
-    margin-top: 30px;
+    margin: 30px 0 0 -115px;
   }
 
   #search-button {
@@ -383,7 +368,7 @@ p {
   }
 
   #date {
-    margin: 25px 0 0 -107px;
+    margin: 25px 0 0 -110px;
     font-size: 25px;
   }
 
@@ -398,9 +383,7 @@ p {
   }
 
   #forecast {
-    margin-left: -137px;
-    margin-top: 85px;
-    margin-right: -222px;
+    margin: 85px -222px 0 -137px;
   }
 }
 
@@ -411,13 +394,11 @@ p {
   }
 
   h1 {
-    margin-top: -75px;
-    margin-left: -85px;
+    margin: -75px 0 0 -85px;
   }
 
   h3 {
-    margin-left: -116px;
-    margin-top: -40px;
+    margin: -40px 0 0 -116px;
   }
 
   .container-fluid {
@@ -459,9 +440,8 @@ p {
   }
 
   .high-temp {
-    margin-left: -45px;
+    margin: 0 0 -35px -45px;
     font-size: 22px;
-    margin-bottom: -35px;
   }
 
   .low-temp {
@@ -482,8 +462,7 @@ p {
   }
 
   #search-input {
-    margin-left: -115px;
-    margin-top: 30px;
+    margin: 30px 0 0 -115px;
   }
 
   #search-button {
@@ -499,7 +478,7 @@ p {
   }
 
   #date {
-    margin: 25px 0 0 -107px;
+    margin: 25px 0 0 -110px;
     font-size: 25px;
   }
 
@@ -514,8 +493,6 @@ p {
   }
 
   #forecast {
-    margin-left: -137px;
-    margin-top: 85px;
-    margin-right: -222px;
+    margin: 85px -222px 0 -137px;
   }
 }
