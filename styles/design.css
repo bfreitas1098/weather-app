@@ -489,13 +489,13 @@ p {
   #search-button {
     position: relative;
     top: -29px;
-    left: 85px;
+    left: 70px;
   }
 
   #current-button {
     position: relative;
     top: -61px;
-    left: 140px;
+    left: 125px;
   }
 
   #date {
