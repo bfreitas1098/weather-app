@@ -173,11 +173,32 @@ p {
 }
 
 @media (min-width: 0px) and (max-width: 399px) {
+  body {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-top: -75px;
+    margin-left: -85px;
+  }
+
+  h3 {
+    margin-left: -116px;
+    margin-top: -40px;
+  }
+
+  .container-fluid {
+    display: block;
+    margin: 0 0 0 0;
+  }
+
   .page {
     border: 0px transparent;
     box-shadow: none;
-    max-width: 150px;
-    margin: 35px 0px 39px 66px;
+    max-width: 80px;
+    margin-top: 35px;
+    margin-left: 135px;
   }
 
   .weather-conditions {
@@ -186,7 +207,7 @@ p {
   }
 
   .humidity {
-    margin: -60px 0 0 212px;
+    margin: -90px 0 0 198px;
   }
 
   .wind-conditions {
@@ -195,6 +216,33 @@ p {
 
   .conditions {
     margin-left: 30px;
+  }
+
+  .temp-number-row {
+    margin: 10px 0 0 -75px;
+  }
+
+  .temp-label-row {
+    margin: 50px 0 0 -75px;
+  }
+
+  .high-temp {
+    margin-left: -20px;
+    font-size: 22px;
+    margin-bottom: -35px;
+  }
+
+  .low-temp {
+    margin-left: 122px;
+    font-size: 22px;
+  }
+
+  .units {
+    margin: -55px 0 0 -30px;
+  }
+
+  .bottom-line {
+    margin: -160px 0 0 55px;
   }
 
   #conditions {
@@ -219,7 +267,7 @@ p {
   }
 
   #date {
-    margin: 25px 0 0 -80px;
+    margin: 25px 0 0 -107px;
     font-size: 25px;
   }
 
@@ -229,13 +277,61 @@ p {
   }
 
   #temp-min {
-    margin: -33px 0 0 124px;
+    margin: -33px 0 0 130px;
     font-size: 22px;
   }
 
   #forecast {
-    margin-left: -130px;
+    margin-left: -137px;
     margin-top: 85px;
+    margin-right: -199px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+  body {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-top: -75px;
+    margin-left: -85px;
+  }
+
+  h3 {
+    margin-left: -116px;
+    margin-top: -40px;
+  }
+
+  .container-fluid {
+    display: block;
+    margin: 0 0 0 0;
+  }
+
+  .page {
+    border: 0px transparent;
+    box-shadow: none;
+    max-width: 80px;
+    margin-top: 35px;
+    margin-left: 135px;
+  }
+
+  .weather-conditions {
+    margin: 75px 0 0 -176px;
+    font-size: 20px;
+  }
+
+  .humidity {
+    margin: -90px 0 0 228px;
+  }
+
+  .wind-conditions {
+    margin: -30px 0 0 230px;
+  }
+
+  .conditions {
+    margin-left: 30px;
   }
 
   .temp-number-row {
@@ -247,18 +343,14 @@ p {
   }
 
   .high-temp {
-    margin-left: -20px;
+    margin-left: -45px;
     font-size: 22px;
+    margin-bottom: -35px;
   }
 
   .low-temp {
-    margin-left: 109px;
+    margin-left: 122px;
     font-size: 22px;
-  }
-
-  h1 {
-    margin-top: -75px;
-    margin-left: -10px;
   }
 
   .units {
@@ -266,11 +358,164 @@ p {
   }
 
   .bottom-line {
-    margin: -61px 0 0 55px;
+    margin: -160px 0 0 55px;
+  }
+
+  #conditions {
+    margin-left: 4px;
+  }
+
+  #search-input {
+    margin-left: -115px;
+    margin-top: 30px;
+  }
+
+  #search-button {
+    position: relative;
+    top: -29px;
+    left: 85px;
+  }
+
+  #current-button {
+    position: relative;
+    top: -61px;
+    left: 140px;
+  }
+
+  #date {
+    margin: 25px 0 0 -107px;
+    font-size: 25px;
+  }
+
+  #temp-max {
+    margin-left: -32px;
+    font-size: 22px;
+  }
+
+  #temp-min {
+    margin: -33px 0 0 130px;
+    font-size: 22px;
+  }
+
+  #forecast {
+    margin-left: -137px;
+    margin-top: 85px;
+    margin-right: -222px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 750px) {
+  body {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-top: -75px;
+    margin-left: -85px;
   }
 
   h3 {
-    margin-left: -90px;
+    margin-left: -116px;
     margin-top: -40px;
+  }
+
+  .container-fluid {
+    display: block;
+    margin: 0 0 0 0;
+  }
+
+  .page {
+    border: 0px transparent;
+    box-shadow: none;
+    max-width: 80px;
+    margin-top: 35px;
+    margin-left: 135px;
+  }
+
+  .weather-conditions {
+    margin: 75px 0 0 -176px;
+    font-size: 20px;
+  }
+
+  .humidity {
+    margin: -90px 0 0 228px;
+  }
+
+  .wind-conditions {
+    margin: -30px 0 0 230px;
+  }
+
+  .conditions {
+    margin-left: 30px;
+  }
+
+  .temp-number-row {
+    margin: 10px 0 0 -75px;
+  }
+
+  .temp-label-row {
+    margin: 50px 0 0 -75px;
+  }
+
+  .high-temp {
+    margin-left: -45px;
+    font-size: 22px;
+    margin-bottom: -35px;
+  }
+
+  .low-temp {
+    margin-left: 122px;
+    font-size: 22px;
+  }
+
+  .units {
+    margin: -55px 0 0 -30px;
+  }
+
+  .bottom-line {
+    margin: -160px 0 0 55px;
+  }
+
+  #conditions {
+    margin-left: 4px;
+  }
+
+  #search-input {
+    margin-left: -115px;
+    margin-top: 30px;
+  }
+
+  #search-button {
+    position: relative;
+    top: -29px;
+    left: 85px;
+  }
+
+  #current-button {
+    position: relative;
+    top: -61px;
+    left: 140px;
+  }
+
+  #date {
+    margin: 25px 0 0 -107px;
+    font-size: 25px;
+  }
+
+  #temp-max {
+    margin-left: -10px;
+    font-size: 22px;
+  }
+
+  #temp-min {
+    margin: -33px 0 0 130px;
+    font-size: 22px;
+  }
+
+  #forecast {
+    margin-left: -137px;
+    margin-top: 85px;
+    margin-right: -222px;
   }
 }
