@@ -489,3 +489,6 @@ p {
     margin: 85px -222px 0 -137px;
   }
 }
+
+@media (min-width: 760px) and (max-width: 800px) {
+}
